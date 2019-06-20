@@ -37,5 +37,13 @@ public class EspecialidadeService {
         return datatables.getResponse(pages);
     }
 
+    @Transactional(readOnly = false)
+    public Especialidade buscaPorId(Long id) {
+            return repository.findById(id).get();
+    }
 
+    @Transactional(readOnly = false)
+    public void remover(Long id) {
+        repository.deleteById(id);
+    }
 }
