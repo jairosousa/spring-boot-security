@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="408685c2-40ac-4596-8abd-745a79443192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/usuario/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/usuario/cadastro.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +27,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="63" column="57" lean-forward="true" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+            <state relative-caret-position="489">
+              <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="39" column="23" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="39" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/especialidade/especialidade.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-163">
+              <caret line="27" column="94" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -45,23 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/conversor/PerfisConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="462">
+              <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -82,10 +104,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/UsuarioRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="354">
               <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#0#49#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/usuario.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="34" column="89" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="89" />
+            <state relative-caret-position="165">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -133,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/DemoSecurityApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/MedicoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/especialidade.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/EspecialidadeRepository.java" />
@@ -142,8 +164,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/UsuarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/conversor/PerfisConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/UsuarioService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -176,6 +199,49 @@
               <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
@@ -328,7 +394,7 @@
       <workItem from="1561042618168" duration="5264000" />
       <workItem from="1561056403607" duration="4465000" />
       <workItem from="1561061140674" duration="1639000" />
-      <workItem from="1561067854351" duration="3355000" />
+      <workItem from="1561067854351" duration="5067000" />
     </task>
     <task id="LOCAL-00001" summary="8. Liberando acesso público a home e arquivos estáticos">
       <created>1561032978059</created>
@@ -449,17 +515,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561070310731</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="29. Seleção automática de perfis na edição">
+      <created>1561071405960</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1561071405960</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30351000" />
+    <option name="totallyTimeSpent" value="32063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13752665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13752665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -469,7 +542,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21343446" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21343446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -516,7 +589,8 @@
     <MESSAGE value="25. Conversor para lista de perfis" />
     <MESSAGE value="27. Restringindo cadastros de usuários já existentes" />
     <MESSAGE value="28. Editando credenciais de usuários" />
-    <option name="LAST_COMMIT_MESSAGE" value="28. Editando credenciais de usuários" />
+    <MESSAGE value="29. Seleção automática de perfis na edição" />
+    <option name="LAST_COMMIT_MESSAGE" value="29. Seleção automática de perfis na edição" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/domain/Especialidade.java">
@@ -609,16 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -630,17 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/especialidade/especialidade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="94" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/EspecialidadeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -719,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/UsuarioRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/EspecialidadeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -759,25 +795,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="34" column="89" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="89" />
+        <state relative-caret-position="165">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/UsuarioRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="63" column="57" lean-forward="true" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+        <state relative-caret-position="354">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#0#49#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/usuario/cadastro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="462">
+          <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/especialidade/especialidade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="27" column="94" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
