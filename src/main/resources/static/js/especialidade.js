@@ -15,14 +15,14 @@ $(document).ready(function () {
             {data: 'id'},
             {data: 'titulo'},
             {orderable: false, 
-             data: 'id',
+             data: 'id', // adicionar botão editar
                 "render": function(id) {
                     return '<a class="btn btn-success btn-sm btn-block" href="/especialidades/editar/'+ 
                     	id +'" role="button"><i class="fas fa-edit"></i></a>';
                 }
             },
             {orderable: false,
-             data: 'id',
+             data: 'id', // adicionar botão excluir
                 "render": function(id) {
                     return '<a class="btn btn-danger btn-sm btn-block" href="/especialidades/excluir/'+ 
                     	id +'" role="button" data-toggle="modal" data-target="#confirm-modal"><i class="fas fa-times-circle"></i></a>';
