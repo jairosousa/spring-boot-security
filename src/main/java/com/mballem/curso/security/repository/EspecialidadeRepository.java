@@ -7,8 +7,14 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface EspecialidadeRepository extends JpaRepository<Especialidade, Long> {
+
     @Query("select e from Especialidade e where e.titulo like :search%")
     Page<Especialidade> findAllByTitulo(String search, Pageable pageable);
+
+    @Query("select e.titulo from Especialidade e where e.titulo like :termo%")
+    List<Especialidade> findEspecialidadesByTermo(String termo);
 }
