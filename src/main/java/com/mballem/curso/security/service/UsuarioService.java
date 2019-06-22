@@ -34,7 +34,8 @@ public class UsuarioService implements UserDetailsService {
         return repository.findByEmail(email);
     }
 
-    @Override @Transactional(readOnly = true)
+    @Override
+    @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Usuario usuario = buscarPorEmail(username);
         return new User(
@@ -77,6 +78,7 @@ public class UsuarioService implements UserDetailsService {
 
     @Transactional(readOnly = true)
     public Usuario buscarPorIdEPerfis(Long usuarioId, Long[] perfisId) {
-        return repository.findByIdAndPerfis(usuarioId, perfisId);
+        return repository.findByIdAndPerfis(usuarioId, perfisId)
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario inexistente!"));
     }
 }
