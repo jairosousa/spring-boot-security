@@ -46,7 +46,7 @@ public class EspecialidadeController {
     }
 
     @GetMapping("excluir/{id}")
-    public String excluir(@PathVariable("id") Long id,RedirectAttributes attr) {
+    public String excluir(@PathVariable("id") Long id, RedirectAttributes attr) {
         service.remover(id);
         attr.addFlashAttribute("sucesso", "Operação realizada com sucesso");
         return "redirect:/especialidades";
@@ -54,6 +54,7 @@ public class EspecialidadeController {
 
     /**
      * Metodo buscat especialidades pelo auto-complete
+     *
      * @param termo
      * @return
      */
@@ -62,5 +63,12 @@ public class EspecialidadeController {
         List<String> especialidades = service.buscarEspecialidadeByTermo(termo);
         return ResponseEntity.ok(especialidades);
     }
+
+    @GetMapping("datatables/server/medico/{id}")
+    public ResponseEntity<?> getEspecialidadePorMedico(@PathVariable("id") Long id, HttpServletRequest request) {
+
+        return ResponseEntity.ok(service.buscarEspecialidadePorMedico(id, request));
+    }
+
 
 }
