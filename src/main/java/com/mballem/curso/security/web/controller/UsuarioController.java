@@ -1,8 +1,10 @@
 package com.mballem.curso.security.web.controller;
 
+import com.mballem.curso.security.domain.Medico;
 import com.mballem.curso.security.domain.Perfil;
 import com.mballem.curso.security.domain.PerfilTipo;
 import com.mballem.curso.security.domain.Usuario;
+import com.mballem.curso.security.service.MedicoService;
 import com.mballem.curso.security.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -25,6 +27,9 @@ public class UsuarioController {
 
     @Autowired
     private UsuarioService service;
+
+    @Autowired
+    private MedicoService medicoService;
 
     //    Abrir cadastro de usuários (Médico/admin/paciente)
     @GetMapping("novo/cadastro/usuario")
@@ -84,11 +89,13 @@ public class UsuarioController {
 
         if (us.getPerfis().contains(new Perfil(PerfilTipo.ADMIN.getCod())) &&
                 !us.getPerfis().contains(new Perfil(PerfilTipo.MEDICO.getCod()))) {
-
             return new ModelAndView("usuario/cadastro", "usuario", us);
+
         } else if (us.getPerfis().contains(new Perfil(PerfilTipo.MEDICO.getCod()))){
+            Medico medico = medicoService.buscarPorUsuarioId(usuarioId);
 
             return new ModelAndView("especialidade/especialidade");
+
         } else if(us.getPerfis().contains(new Perfil(PerfilTipo.PACIENTE.getCod()))) {
             ModelAndView model = new ModelAndView("error");
             model.addObject("status", 403);
