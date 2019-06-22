@@ -31,7 +31,5 @@ public class MedicoService {
         if (!medico.getEspecialidades().isEmpty()){
             medico.getEspecialidades().addAll(medico.getEspecialidades());
         }
-
-        repository.save(m2);
     }
 }
