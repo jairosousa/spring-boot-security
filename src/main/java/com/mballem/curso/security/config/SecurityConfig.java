@@ -11,12 +11,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private staric
-    final String ADMIN = PerfilTipo.ADMIN.getDesc();
-    private staric
-    final String MEDICO = PerfilTipo.MEDICO.getDesc();
-    private staric
-    final String PACIENTE = PerfilTipo.PACIENTE.getDesc();
+    private static final String ADMIN = PerfilTipo.ADMIN.getDesc();
+    private static final String MEDICO = PerfilTipo.MEDICO.getDesc();
+    private static final String PACIENTE = PerfilTipo.PACIENTE.getDesc();
 
     @Autowired
     private UsuarioService service;
