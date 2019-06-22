@@ -29,7 +29,12 @@ public class MedicoController {
 
     //    Abrir pagina de dados pessoais de médicos pelo Médico
     @GetMapping("dados")
-    public String abrirPorMedico(Medico medico, ModelMap model) {
+    public String abrirPorMedico(Medico medico, ModelMap model, @AuthenticationPrincipal User user) {
+
+        if (medico.hasNotId()) {
+            medico = service.buscarPorEmail(user.getUsername());
+            model.addAttribute("medico", medico);
+        }
         return "medico/cadastro";
     }
 
