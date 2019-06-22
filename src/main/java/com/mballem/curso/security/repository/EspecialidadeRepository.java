@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public interface EspecialidadeRepository extends JpaRepository<Especialidade, Long> {
@@ -18,4 +19,7 @@ public interface EspecialidadeRepository extends JpaRepository<Especialidade, Lo
 
     @Query("select e.titulo from Especialidade e where e.titulo like :termo%")
     List<String> findEspecialidadesByTermo(String termo);
+
+    @Query("select e from Especialidade e where e.titulo IN :titulos")
+    Set<Especialidade> findByTitulos(String[] titulos);
 }

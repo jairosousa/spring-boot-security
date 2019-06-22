@@ -56,7 +56,7 @@ public class MedicoController {
         return "redirect:/medicos/dados";
     }
 
-    @PostMapping("editar")
+    @PostMapping("/editar")
     public String editar(Medico medico, RedirectAttributes attr) {
         service.editar(medico);
         attr.addFlashAttribute("sucesso", "Operação realizada com sucesso");

@@ -28,13 +28,13 @@ public class MedicoService {
         m2.setCrm(medico.getCrm());
         m2.setDtInscricao(medico.getDtInscricao());
         m2.setNome(medico.getNome());
-        if (!medico.getEspecialidades().isEmpty()){
-            medico.getEspecialidades().addAll(medico.getEspecialidades());
+        if (!medico.getEspecialidades().isEmpty()) {
+            m2.getEspecialidades().addAll(medico.getEspecialidades());
         }
     }
 
     @Transactional(readOnly = true)
     public Medico buscarPorEmail(String email) {
-       return repository.findByUsuarioEmail(email).orElse(new Medico());
+        return repository.findByUsuarioEmail(email).orElse(new Medico());
     }
 }
