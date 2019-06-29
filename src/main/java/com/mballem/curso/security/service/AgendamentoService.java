@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -24,5 +25,13 @@ public class AgendamentoService {
     @Transactional(readOnly = false)
     public void salvar(Agendamento agendamento) {
         repository.save(agendamento);
+    }
+
+    @Transactional(readOnly = true)
+    public Object buscaHistoricoPorMedicoEmail(String username, HttpServletRequest request) {
+    }
+
+    @Transactional(readOnly = true)
+    public Object buscaHistoricoPorPacienteEmail(String username, HttpServletRequest request) {
     }
 }

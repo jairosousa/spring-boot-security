@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320a2d7c-92bb-4454-a5a9-110ee71c8b75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/DemoSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/DemoSecurityApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/DemoSecurityApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/DemoSecurityApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/datatables/Datatables.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/datatables/Datatables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/datatables/DatatablesColunas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/datatables/DatatablesColunas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/AbstractEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Agendamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Agendamento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Especialidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Especialidade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Horario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Horario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Medico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Medico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Paciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Perfil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Perfil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/PerfilTipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/PerfilTipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/domain/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/repository/EspecialidadeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/repository/EspecialidadeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/repository/UsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/service/EspecialidadeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/service/EspecialidadeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/service/UsuarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/EspecialidadeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/EspecialidadeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/conversor/EspecialidadeConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/conversor/EspecialidadeConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/conversor/PerfisConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/conversor/PerfisConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/exception/ExceptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mballem/curso/security/web/exception/ExceptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mballem/curso/security/DemoSecurityApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mballem/curso/security/DemoSecurityApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/agendamento.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/agendamento.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,24 +16,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+            <state relative-caret-position="422">
+              <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+              <folding>
+                <element signature="e#2938#2939#0" expanded="true" />
+                <element signature="e#2993#2994#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/agendamento.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="96" column="60" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agendamento/historico-paciente.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-678" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="600">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +68,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/DemoSecurityApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/agendamento.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" />
       </list>
     </option>
   </component>
@@ -95,8 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +162,40 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="agendamento" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -214,53 +245,67 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561814294888</updated>
-      <workItem from="1561814296444" duration="1881000" />
+      <workItem from="1561814296444" duration="1962000" />
+      <workItem from="1561830921481" duration="1008000" />
     </task>
+    <task id="LOCAL-00001" summary="57. Inserindo uma consulta">
+      <created>1561816228746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561816228746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1881000" />
+    <option name="totallyTimeSpent" value="2970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="57. Inserindo uma consulta" />
+    <option name="LAST_COMMIT_MESSAGE" value="57. Inserindo uma consulta" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java">
@@ -277,21 +322,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agendamento/historico-paciente.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-678" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/agendamento.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="96" column="60" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+        <state relative-caret-position="422">
+          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+          <folding>
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
