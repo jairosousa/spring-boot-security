@@ -66,12 +66,27 @@ public class MedicoController {
         return "redirect:/medicos/dados";
     }
 
+    /**
+     * excluir ESPECIALIDADE por médico
+     *
+     * @param idMedico
+     * @param idEsp
+     * @param attr
+     * @return
+     */
     @GetMapping("id/{idMedico}/excluir/especializacao/{idEsp}")
     public String excluirEspecialidadePorMedico(@PathVariable("idMedico") Long idMedico,
                                                 @PathVariable("idEsp") Long idEsp,
                                                 RedirectAttributes attr) {
-        service.excluirEspecialidadePorMedico(idMedico, idEsp);
-        attr.addFlashAttribute("sucesso", "Especialidade removida com sucesso");
+        if (service.existeespecialidadeAgendada(idMedico, idEsp)) {
+            attr.addFlashAttribute("falha", "Tem consulta agendadas, exclusão negada");
+
+        } else {
+            service.excluirEspecialidadePorMedico(idMedico, idEsp);
+            attr.addFlashAttribute("sucesso", "Especialidade removida com sucesso");
+
+        }
+
         return "redirect:/medicos/dados";
     }
 
