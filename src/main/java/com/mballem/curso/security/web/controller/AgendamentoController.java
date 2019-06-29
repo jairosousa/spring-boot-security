@@ -15,6 +15,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -100,17 +101,25 @@ public class AgendamentoController {
      */
     @GetMapping("datatables/server/historico")
     public ResponseEntity<?> historicoAgendamentosPorPacientes(HttpServletRequest request, @AuthenticationPrincipal User user) {
-        if (user.getAuthorities().contains(new SimpleGrantedAuthority(PerfilTipo.PACIENTE.getDesc()))){
+        if (user.getAuthorities().contains(new SimpleGrantedAuthority(PerfilTipo.PACIENTE.getDesc()))) {
 
             return ResponseEntity.ok(service.buscaHistoricoPorPacienteEmail(user.getUsername(), request));
         }
 
-        if (user.getAuthorities().contains(new SimpleGrantedAuthority(PerfilTipo.MEDICO.getDesc()))){
+        if (user.getAuthorities().contains(new SimpleGrantedAuthority(PerfilTipo.MEDICO.getDesc()))) {
 
 
             return ResponseEntity.ok(service.buscaHistoricoPorMedicoEmail(user.getUsername(), request));
         }
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("editar/consulta/{id}")
+    public String preEditarConsultaPaciente(@PathVariable("id") Long id,
+                                            ModelMap model, @AuthenticationPrincipal User user) {
+        Agendamento agendamento = service.buscarPorId(id);
+        model.addAttribute("agendamento", agendamento);
+        return "agendamento/cadastro";
     }
 
 }

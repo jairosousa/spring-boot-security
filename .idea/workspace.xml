@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320a2d7c-92bb-4454-a5a9-110ee71c8b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/projection/HistoricoPaciente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/AgendamentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/AgendamentoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/agendamento.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/agendamento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agendamento/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agendamento/cadastro.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,12 +24,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+            <state relative-caret-position="299">
+              <caret line="120" column="55" selection-start-line="120" selection-start-column="55" selection-end-line="120" selection-end-column="55" />
               <folding>
                 <element signature="e#2938#2939#0" expanded="true" />
                 <element signature="e#2993#2994#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agendamento/cadastro.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/MedicoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1087">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -51,15 +68,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+            <state relative-caret-position="447">
+              <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
               <folding>
                 <element signature="e#842#843#0" expanded="true" />
                 <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#2177#2178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/datatables/Datatables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-775">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -67,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/AgendamentoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="338">
               <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
               <folding>
                 <element signature="e#0#183#1" expanded="true" />
@@ -106,10 +133,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/DemoSecurityApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/agendamento.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/projection/HistoricoPaciente.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/AgendamentoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/agendamento/cadastro.html" />
       </list>
     </option>
   </component>
@@ -121,10 +149,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="536" />
+    <option name="y" value="211" />
+    <option name="width" value="996" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -294,7 +322,7 @@
       <option name="presentableId" value="Default" />
       <updated>1561814294888</updated>
       <workItem from="1561814296444" duration="1962000" />
-      <workItem from="1561830921481" duration="2637000" />
+      <workItem from="1561830921481" duration="7084000" />
     </task>
     <task id="LOCAL-00001" summary="57. Inserindo uma consulta">
       <created>1561816228746</created>
@@ -310,17 +338,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561831991903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="59. Projeção de histórico de agendamentos">
+      <created>1561833602694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561833602694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4599000" />
+    <option name="totallyTimeSpent" value="9046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,7 +396,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="57. Inserindo uma consulta" />
     <MESSAGE value="58. Histórico de agendamentos." />
-    <option name="LAST_COMMIT_MESSAGE" value="58. Histórico de agendamentos." />
+    <MESSAGE value="59. Projeção de histórico de agendamentos" />
+    <option name="LAST_COMMIT_MESSAGE" value="59. Projeção de histórico de agendamentos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/config/SecurityConfig.java">
@@ -383,24 +419,6 @@
         <state relative-caret-position="-678" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/agendamento.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="96" column="60" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
-          <folding>
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#2993#2994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/projection/HistoricoPaciente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -411,9 +429,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/datatables/Datatables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-775">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/repository/AgendamentoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="338">
           <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding>
             <element signature="e#0#183#1" expanded="true" />
@@ -422,14 +447,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/AgendamentoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="120" column="55" selection-start-line="120" selection-start-column="55" selection-end-line="120" selection-end-column="55" />
+          <folding>
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/web/controller/MedicoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1087">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/agendamento.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="96" column="60" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mballem/curso/security/service/AgendamentoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+        <state relative-caret-position="447">
+          <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
           <folding>
             <element signature="e#842#843#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/agendamento/cadastro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
         </state>
       </provider>
     </entry>
