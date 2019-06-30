@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -172,6 +173,7 @@ public class UsuarioController {
 
     /**
      * Recebe a requisição de confirmacao de cadastro
+     *
      * @param codigo
      * @param attr
      * @return
@@ -185,6 +187,51 @@ public class UsuarioController {
         attr.addFlashAttribute("texto", "Parabéns! seu cadastro está ativo");
         attr.addFlashAttribute("subtexto", "Siga com seu login/senha");
         return "redirect:/login";
+    }
+
+    /**
+     * Abre a pagina de pedido de redefinição de senha
+     *
+     * @return
+     */
+    @GetMapping("p/redefinir/senha")
+    public String pedidoRedefinirSenha() {
+        return "usuario/pedido-recuperar-senha";
+    }
+
+    /**
+     * Abre o Formulario de recuperar senha
+     *
+     * @param email
+     * @param model
+     * @return
+     * @throws MessagingException
+     */
+    @GetMapping("p/recuperar/senha")
+    public String redefirSenha(String email, ModelMap model) throws MessagingException {
+        service.pedidoRedefinicaoDeSenha(email);
+        model.addAttribute("sucesso", "Em instante você receberar um e-mail " +
+                "para proceguir com a redefiniçãp de senha");
+        model.addAttribute("usuario", new Usuario(email));
+
+        return "usuario/recuperar-senha";
+    }
+
+    @PostMapping("p/nova/senha")
+    public String confirmacaoDeRedefinicaoDeSenha(Usuario usuario, ModelMap model) {
+        Usuario u = service.buscarPorEmail(usuario.getEmail());
+        if (!usuario.getCodigoVerificador().equals(u.getCodigoVerificador())) {
+            model.addAttribute("falha", "Código verificador não confere.");
+            return "usuario/recuperar-senha";
+        }
+
+        u.setCodigoVerificador(null);
+        service.alterarSenha(u, usuario.getSenha());
+        model.addAttribute("alerta", "sucesso");
+        model.addAttribute("titulo", "senha redefinida!");
+        model.addAttribute("texto", "Você já pode logar no sistema");
+
+        return "login";
     }
 
 }
