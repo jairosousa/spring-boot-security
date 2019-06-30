@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.List;
@@ -162,8 +163,12 @@ public class UsuarioController {
         catch (DataIntegrityViolationException ex) {
             result.reject("email", "Ops... este e-mail já existe na base de dados");
             return "cadastrar-se";
+        } catch (MessagingException e) {
+            e.printStackTrace();
         }
 
         return "redirect:/u/cadastro/realizado";
     }
+
+
 }

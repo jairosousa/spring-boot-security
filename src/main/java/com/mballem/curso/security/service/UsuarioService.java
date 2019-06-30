@@ -5,6 +5,7 @@ import com.mballem.curso.security.datatables.DatatablesColunas;
 import com.mballem.curso.security.domain.Perfil;
 import com.mballem.curso.security.domain.PerfilTipo;
 import com.mballem.curso.security.domain.Usuario;
+import com.mballem.curso.security.exception.AcessoNegadoException;
 import com.mballem.curso.security.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,7 +17,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Base64Utils;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +34,9 @@ public class UsuarioService implements UserDetailsService {
     @Autowired
     private Datatables datatables;
 
+    @Autowired
+    private EmailService emailService;
+
     public static boolean isSenhaCorreta(String senhaDigitada, String senhaArmazenada) {
         return new BCryptPasswordEncoder().matches(senhaDigitada, senhaArmazenada);
     }
@@ -44,7 +50,7 @@ public class UsuarioService implements UserDetailsService {
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Usuario usuario = buscarPorEmailEAtivo(username)
-                .orElseThrow(()-> new UsernameNotFoundException("Usuario: " + username + " não encontrado."));
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario: " + username + " não encontrado."));
 
         return new User(
                 usuario.getEmail(),
@@ -97,15 +103,43 @@ public class UsuarioService implements UserDetailsService {
     }
 
     @Transactional(readOnly = false)
-    public void salvarCadastroPaciente(Usuario usuario) {
+    public void salvarCadastroPaciente(Usuario usuario) throws MessagingException {
         String crypt = new BCryptPasswordEncoder().encode(usuario.getSenha());
         usuario.setSenha(crypt);
         usuario.addPerfil(PerfilTipo.PACIENTE);
         repository.save(usuario);
+
+        // Faz a chamada de encio de email
+        emailDeConfirmacaoDeCadastro(usuario.getEmail());
     }
 
     @Transactional(readOnly = true)
     public Optional<Usuario> buscarPorEmailEAtivo(String email) {
         return repository.findByEmailAndAtivo(email);
+    }
+
+    /**
+     * Envia email de confirmação para usuario/paciente
+     * @param email
+     * @throws MessagingException
+     */
+    public void emailDeConfirmacaoDeCadastro(String email) throws MessagingException {
+        String codigo = Base64Utils.encodeToString(email.getBytes()); //Transforma o e-mail em Base 64
+        emailService.enviarPedidoDeConfirmacaoDeCadastro(email, codigo);
+    }
+
+    /**
+     * Ativa o cadstro do usuario/paciente
+     * @param codigo
+     */
+    @Transactional(readOnly = true)
+    public void ativarCadastroPaciente(String codigo) {
+        String email = new String(Base64Utils.decodeFromString(codigo));
+        Usuario usuario = buscarPorEmail(email);
+        if (usuario.hasNotId()){
+            throw new AcessoNegadoException("Não foi possivel ativar seu cadastro, entre em contato com suporte");
+        }
+
+        usuario.setAtivo(true);
     }
 }
