@@ -132,7 +132,7 @@ public class UsuarioService implements UserDetailsService {
      * Ativa o cadstro do usuario/paciente
      * @param codigo
      */
-    @Transactional(readOnly = true)
+    @Transactional(readOnly = false)
     public void ativarCadastroPaciente(String codigo) {
         String email = new String(Base64Utils.decodeFromString(codigo));
         Usuario usuario = buscarPorEmail(email);

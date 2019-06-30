@@ -29,7 +29,7 @@ public class EmailService {
         context.setVariable("titulo", "Bem vindo a clinica Spring Security");
         context.setVariable("texto", "Precisamos que confirme o seu cadastro no link abaixo");
         context.setVariable("linkConfirmacao",
-                "http://localhost:8080/u/confirmacao/cadastro?codigo=" + codigo);
+                "http://192.168.1.103:8080/u/confirmacao/cadastro?codigo=" + codigo);
 
         String html = template.process("email/confirmacao", context);
 

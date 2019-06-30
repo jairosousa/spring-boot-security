@@ -170,5 +170,21 @@ public class UsuarioController {
         return "redirect:/u/cadastro/realizado";
     }
 
+    /**
+     * Recebe a requisição de confirmacao de cadastro
+     * @param codigo
+     * @param attr
+     * @return
+     */
+    @GetMapping("confirmacao/cadastro")
+    public String respostaConfirmacaoCadastroPaciente(@RequestParam("codigo") String codigo,
+                                                      RedirectAttributes attr) {
+        service.ativarCadastroPaciente(codigo);
+        attr.addFlashAttribute("alerta", "sucesso");
+        attr.addFlashAttribute("titulo", "Cadastro ativado");
+        attr.addFlashAttribute("texto", "Parabéns! seu cadastro está ativo");
+        attr.addFlashAttribute("subtexto", "Siga com seu login/senha");
+        return "redirect:/login";
+    }
 
 }
