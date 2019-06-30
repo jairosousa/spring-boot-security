@@ -28,6 +28,6 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
             "join m.especialidades e " +
             "join m.agendamentos a " +
             "where " +
-            "a.especialidades.id = :idEsp AND a.medico.id = idMededico")
+            "a.especialidade.id = :idEsp AND a.medico.id = :idMedico")
     Optional<Long> hasEspecialidadeAgendada(Long idMedico, Long idEsp);
 }
