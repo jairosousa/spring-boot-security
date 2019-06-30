@@ -1,3 +1,4 @@
+
 package com.mballem.curso.security.web.controller;
 
 import com.mballem.curso.security.domain.Medico;
@@ -12,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -119,7 +121,7 @@ public class UsuarioController {
                               @RequestParam("senha3") String s3,
                               @AuthenticationPrincipal User user,
                               RedirectAttributes attr) {
-        if (!s1.equals(s2)){
+        if (!s1.equals(s2)) {
             attr.addFlashAttribute("falha", "Senhas não conferem, tente novamente");
             return "redirect:/u/editar/senha";
         }
@@ -133,5 +135,35 @@ public class UsuarioController {
         service.alterarSenha(u, s1);
         attr.addFlashAttribute("sucesso", "Senhas alterada com sucesso");
         return "redirect:/u/editar/senha";
+    }
+
+    /**
+     * Abre a pagina de cadastro de usuario
+     *
+     * @param usuario
+     * @return
+     */
+    @GetMapping("novo/cadastro")
+    public String novoCadastro(Usuario usuario) {
+        return "cadastrar-se";
+    }
+
+    @GetMapping("cadastro/realizado")
+    public String cadastroRealizado() {
+        return "fragments/mensagem";
+    }
+
+    @PostMapping("cadastro/paciente/salvar")
+    public String salvarCadastroPaciente(Usuario usuario, BindingResult result) {
+        try {
+            service.salvarCadastroPaciente(usuario);
+        }
+        // Dispara quando usuario tenta cadastrar usuario já cadastrado
+        catch (DataIntegrityViolationException ex) {
+            result.reject("email", "Ops... este e-mail já existe na base de dados");
+            return "cadastrar-se";
+        }
+
+        return "redirect:/u/cadastro/realizado";
     }
 }
